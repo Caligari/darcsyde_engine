@@ -1,0 +1,12 @@
+[package]
+name = "tests"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+log.workspace = true
+fern.workspace = true
+thiserror.workspace = true
+anyhow.workspace = true
+
+serial_test = "3.2"

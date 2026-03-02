@@ -1,0 +1,26 @@
+[workspace]
+resolver = "3"
+members = [
+    # "common",
+    # "render",
+    # "physics",
+    # "engine",
+    # "sound",
+    # "input",
+    "tests",
+]
+
+[profile.release]
+lto = "fat"              # Link-time optimization
+codegen-units = 1        # Better optimization
+panic = "abort"          # Smaller binaries
+
+[profile.dev]
+debug = 1                # Faster dev builds
+opt-level = 1            # Some optimization in dev
+
+[workspace.dependencies]
+log = "0.4"
+fern = "0.7"
+anyhow = "1.0"
+thiserror = "2.0"
