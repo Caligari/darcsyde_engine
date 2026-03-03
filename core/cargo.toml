@@ -1,0 +1,15 @@
+[package]
+name = "engine_core"
+version = "0.0.0"
+edition = "2024"
+
+[dependencies]
+log.workspace = true
+fern.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+glam.workspace = true
+
+winit = "0.30"
+# at least until we have a tokio or whatever
+pollster = "0.3"

@@ -10,3 +10,5 @@ thiserror.workspace = true
 anyhow.workspace = true
 
 serial_test = "3.2"
+
+engine_core = { path = "../core" }
